@@ -3,9 +3,7 @@ require 'pry'
 def my_find(collection)
 i = 0 
 while i < colelction.length 
-if yield(collection[i])
-  
-end 
-i += 1 
+return collection[i] if yield(collection[i])
+ i += 1 
   end 
 end
